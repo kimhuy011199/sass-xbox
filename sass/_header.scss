@@ -1,0 +1,126 @@
+.header {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10rem;
+    padding-top: 6rem;
+
+    @media only screen and (max-width: $bp-large) {
+      gap: 6rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-top: 0rem;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__image {
+    animation: goToRight 0.4s linear;
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 40rem;
+      justify-self: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      max-width: 30rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    animation: goToLeft 0.4s linear;
+
+    @media only screen and (max-width: $bp-large) {
+      gap: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      gap: 1rem;
+    }
+  }
+
+  &__price {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $white-color;
+    padding-left: 2rem;
+  }
+
+  &__price::before {
+    position: absolute;
+    bottom: 8.5rem;
+    left: 0;
+    width: 0.5rem;
+    height: 3rem;
+    background-color: $primary-color;
+    content: "";
+
+    @media only screen and (max-width: $bp-large) {
+      bottom: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      bottom: 7.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      bottom: 7rem;
+    }
+  }
+
+  &__console {
+    font-size: 10rem;
+    font-weight: 600;
+    position: absolute;
+    top: -10rem;
+    right: 0;
+    z-index: -1;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 8rem;
+      top: -8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 6rem;
+      top: -6rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 0.5rem;
+  }
+}
+
+// ANIMATION
+@keyframes goToLeft {
+  from {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes goToRight {
+  from {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="js/three.js"></script>
+    <script defer src="js/GLTFLoader.js"></script>
+    <script defer src="js/OrbitControls.js"></script>
+    <script defer src="js/script.js"></script>
+    <title>Xbox One X - Get the most out of your Xbox One X</title>
+  </head>
+  <body>
+    <nav class="nav row">
+      <a href="#">
+        <img class="nav__logo" src="img/logo.svg" alt="Logo" />
+      </a>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#games" class="nav__link">Games</a>
+          </li>
+          <li class="nav__item">
+            <a href="#controller" class="nav__link">Controller</a>
+          </li>
+          <li class="nav__item">
+            <a href="#products" class="nav__link">Products</a>
+          </li>
+          <li class="nav__item">
+            <a href="#upgrade" class="nav__link">Upgrade</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__toggle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="nav__icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <header class="header section" id="home">
+      <div class="header__container row">
+        <div class="header__image">
+          <img src="img/header.png" alt="Header image" class="header__img" />
+        </div>
+        <div class="header__data">
+          <p class="header__console gradient-title">Console</p>
+          <h1 class="heading-1">Xbox One X</h1>
+          <p class="para-1">
+            The brand consists of five video game consoles, as well as
+            applications (games), streaming services, an online service by the
+            name of Xbox network, and the development arm by the name of Xbox
+            Game Studios.
+          </p>
+          <p class="header__price">$399</p>
+          <a href="#" class="btn header__btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn__svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+              />
+            </svg>
+            <p class="btn__text">Add to cart</p>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section games" id="games">
+        <div class="games__container row">
+          <h2 class="heading-2 gradient-title">Explore Games</h2>
+          <div class="games__image">
+            <img src="img/games.png" alt="Games image" class="games__img" />
+          </div>
+          <div class="games__features">
+            <div class="games__card">
+              <img src="img/icon-1.svg" alt="Icon" class="games__icon" />
+              <h4 class="heading-4">Games from all generations</h4>
+              <p class="para-2">
+                Games from all generations play even better. Play over 550
+                classics from Xbox 360 and the Original Xbox.
+              </p>
+            </div>
+            <div class="games__card">
+              <img src="img/icon-2.svg" alt="Icon" class="games__icon" />
+              <h4 class="heading-4">Elevate your game</h4>
+              <p class="para-2">
+                Get an extra controller, headset to play with friends, or extra
+                storage. All Xbox One gaming accessories are compatible.
+              </p>
+            </div>
+            <div class="games__card">
+              <img src="img/icon-3.svg" alt="Icon" class="games__icon" />
+              <h4 class="heading-4">4K entertainment</h4>
+              <p class="para-2">
+                Watch Blu-ray™ movies in stunning 4K Ultra HD and stream 4K
+                video on Netflix, Amazon, Hulu, Microsoft Movies & TV, and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section controller" id="controller">
+        <div class="popup popup__hidden">
+          <button class="popup__close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="popup__svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div class="popup__view"></div>
+        </div>
+        <h2 class="heading-2 gradient-title">Controller</h2>
+        <div class="controller__container row">
+          <div class="controller__image">
+            <img
+              src="img/controller.png"
+              alt="Controller image"
+              class="controller__img"
+            />
+          </div>
+          <div class="controller__content">
+            <p class="para-1 controller__para">
+              The Xbox Wireless Controller feels familiar in the hand yet subtly
+              different, with improved tactile textures and refined geometry
+              making for a more friendly experience.
+            </p>
+            <button href="" class="btn controller__btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn__svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                />
+              </svg>
+              <p class="btn__text">Click to view 3D object</p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="cta">
+        <div class="cta__container row">
+          <div class="cta__content">
+            <h3 class="heading-3">
+              Play 4K exclusives and the biggest blockbusters
+            </h3>
+            <p class="para-1 cta__para">
+              All games are optimized to take advantage of the power of Xbox One
+              X with higher resolutions, faster framerates.
+            </p>
+            <a href="" class="btn cta__btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn__svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                />
+              </svg>
+              <p class="btn__text">Shop now</p>
+            </a>
+          </div>
+          <div class="cta__image">
+            <img src="img/cta.png" alt="CTA image" class="cta__img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section products" id="products">
+        <h2 class="heading-2 gradient-title">Products</h2>
+        <div class="products__container row">
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="img/products-1.png"
+                alt="Products 01"
+                class="products__img"
+              />
+            </div>
+            <p class="products__name">Black Limited Edition</p>
+            <p class="products__price">$49.99</p>
+            <a href="#" class="btn products__btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn__svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                />
+              </svg>
+            </a>
+          </article>
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="img/products-2.png"
+                alt="Products 02"
+                class="products__img"
+              />
+            </div>
+            <p class="products__name">Grey Blue Edition</p>
+            <p class="products__price">$49.99</p>
+            <a href="#" class="btn products__btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn__svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                />
+              </svg>
+            </a>
+          </article>
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="img/products-3.png"
+                alt="Products 03"
+                class="products__img"
+              />
+            </div>
+            <p class="products__name">Night Ops Edition</p>
+            <p class="products__price">$59.99</p>
+            <a href="#" class="btn products__btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn__svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                />
+              </svg>
+            </a>
+          </article>
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="img/products-4.png"
+                alt="Products 04"
+                class="products__img"
+              />
+            </div>
+            <p class="products__name">Grey Blue Edition</p>
+            <p class="products__price">$49.99</p>
+            <a href="#" class="btn products__btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn__svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                />
+              </svg>
+            </a>
+          </article>
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="img/products-5.png"
+                alt="Products 05"
+                class="products__img"
+              />
+            </div>
+            <p class="products__name">Arctic Camo Edition</p>
+            <p class="products__price">$59.99</p>
+            <a href="#" class="btn products__btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn__svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                />
+              </svg>
+            </a>
+          </article>
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="img/products-6.png"
+                alt="Products 06"
+                class="products__img"
+              />
+            </div>
+            <p class="products__name">Phantom Figo Edition</p>
+            <p class="products__price">$54.99</p>
+            <a href="#" class="btn products__btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn__svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                />
+              </svg>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section upgrade" id="upgrade">
+        <h2 class="heading-2 gradient-title">Upgrade</h2>
+        <div class="upgrade__container row">
+          <div class="upgrade__image">
+            <img
+              src="img/upgrade.png"
+              alt="Upgrade image"
+              class="upgrade__img"
+            />
+          </div>
+          <div class="upgrade__content">
+            <p class="para-1 upgrade__para">
+              Games built with the Xbox Series X|S development kit showcase
+              significantly reduced load times and stunning visuals at up to
+              120FPS. From future adventures, to current obsessions, to classic
+              titles, thousands of favorites across four generations of Xbox
+              look and play best on Xbox Series X.
+            </p>
+            <a href="" class="btn upgrade__btn">
+              <p class="btn__text">Upgrade now</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn__svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container row">
+        <a class="footer__logo-container" href="#" class="">
+          <img class="footer__logo" src="img/logo.svg" alt="Footer logo" />
+        </a>
+        <div class="footer__content">
+          <h4 class="heading-4">Browse</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Xbox Consoles</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Xbox GamePass</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Xbox Accessories</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Xbox Games</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h4 class="heading-4">Resources</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Xbox News</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Xbox Support</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Feedback</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Community</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h4 class="heading-4">Newsletter</h4>
+          <form action="" class="footer__form">
+            <input type="email" placeholder="Email" class="footer__input" />
+            <button class="btn footer__btn">
+              <p class="btn__text">Send now</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn__svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__copyright row">
+        <p class="footer__copy">
+          Copyright 2021 - Made with love by <a href="#">@kimhuy011199</a>
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__box">
+            <img
+              src="img/sm-facebook.svg"
+              alt="Facebook"
+              class="footer__icon"
+            />
+          </a>
+          <a href="#" class="footer__box">
+            <img
+              src="img/sm-linkedin.svg"
+              alt="Linkedin"
+              class="footer__icon"
+            />
+          </a>
+          <a href="#" class="footer__box">
+            <img src="img/sm-youtube.svg" alt="Youtube" class="footer__icon" />
+          </a>
+          <a href="#" class="footer__box">
+            <img src="img/sm-twitter.svg" alt="Twitter" class="footer__icon" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll scroll__hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="scroll__svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M7 11l5-5m0 0l5 5m-5-5v12"
+        />
+      </svg>
+    </button>
+  </body>
+</html>

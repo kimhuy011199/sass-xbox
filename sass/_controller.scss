@@ -1,0 +1,57 @@
+.controller {
+  position: relative;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 12rem;
+    margin-top: 6rem;
+
+    @media only screen and (max-width: $bp-large) {
+      gap: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 4rem;
+      gap: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__image {
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__para {
+    max-width: 38rem;
+
+    @media only screen and (max-width: $bp-small) {
+      max-width: 100%;
+    }
+  }
+
+  &__btn {
+    p {
+      color: $text-color-light;
+      font-size: 1.4rem;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}
